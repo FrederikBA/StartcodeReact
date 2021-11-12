@@ -1,6 +1,7 @@
+import authUtils from "../utils/authUtils";
 import { NavLink, useNavigate } from "react-router-dom";
 
-const Header = ({ authUtils, isLoggedIn, currentRoles, setCurrentRoles, onLogout }) => {
+const Header = ({ isLoggedIn, currentRoles, setCurrentRoles, onLogout }) => {
     const navigate = useNavigate();
 
     const onClick = () => {

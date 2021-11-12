@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios'
+import apiUtils from "../utils/apiUtils"
+import axios from 'axios';
 
-const Login = ({ apiUtils, onLogin }) => {
+
+const Login = ({ onLogin }) => {
     const [loginCredentials, setLoginCredentials] = useState({ username: "", password: "" });
     const [loginError, setLoginError] = useState("");
 

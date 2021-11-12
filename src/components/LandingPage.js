@@ -1,7 +1,8 @@
 import { useEffect } from "react"
+import apiUtils from "../utils/apiUtils"
 import axios from "axios";
 
-const LandingPage = ({ apiUtils, currentRoles, setCurrentRoles }) => {
+const LandingPage = ({ currentRoles, setCurrentRoles }) => {
   const username = localStorage.getItem('user')
   const URL = apiUtils.getUrl()
 

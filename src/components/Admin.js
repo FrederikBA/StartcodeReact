@@ -1,4 +1,6 @@
-const Admin = ({ authUtils, currentRoles }) => {
+import authUtils from "../utils/authUtils"
+
+const Admin = ({ currentRoles }) => {
   const username = localStorage.getItem('user')
 
 
