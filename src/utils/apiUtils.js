@@ -6,8 +6,18 @@ const apiUtils = () => {
         return URL;
     }
 
+    const getAuthAxios = () => {
+        const authAxios = axios.create({
+            headers: {
+                'x-access-token': localStorage.getItem('jwtToken')
+            }
+        })
+        return authAxios
+    }
+
     return {
         getUrl,
+        getAuthAxios
     }
 }
 
